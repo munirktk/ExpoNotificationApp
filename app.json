@@ -17,11 +17,31 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#ffffff",
+        "notification": {
+          "icon": "./assets/notification.png",
+          "color": "#ffffff"
+        }
+      },
+      "package": "com.munirkhan.ExpoNotificationApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification.png",
+          "color": "#ffffff",
+          "defaultChannel": "default"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7e5472a2-290c-4f7b-8e0d-79b16c8e06c4"
+      }
     }
   }
 }
